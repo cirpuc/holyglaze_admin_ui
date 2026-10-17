@@ -1,0 +1,6 @@
+{
+  "name": "Shopify Embedded App UI Shell",
+  "description": "Production-ready Shopify Admin embedded application shell with Polaris layout primitives, Contextual Save Bar, App Bridge navigation, and modular admin workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

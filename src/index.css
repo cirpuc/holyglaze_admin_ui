@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #090B10;
+    color: #F3F4F6;
+    user-select: none;
+  }
+}
+
+.font-serif-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ⛔ Red Diagonal Hatch for Forbidden / Overlapped Shopify Host Chrome */
+.forbidden-hatch-dark {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(239, 68, 68, 0.28),
+    rgba(239, 68, 68, 0.28) 7px,
+    rgba(15, 23, 42, 0.58) 7px,
+    rgba(15, 23, 42, 0.58) 14px
+  );
+}
+
+.forbidden-hatch-light {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(239, 68, 68, 0.22),
+    rgba(239, 68, 68, 0.22) 8px,
+    rgba(254, 226, 226, 0.42) 8px,
+    rgba(254, 226, 226, 0.42) 16px
+  );
+}
+
+/* ✨ Cyan Glow for Injectable App Bridge v4 Slots */
+.injectable-slot {
+  box-shadow: 0 0 0 2px #06B6D4, 0 0 12px rgba(6, 182, 212, 0.35);
+}
+
+/* Blueprint subtle grid for Empty Safe-Zone Containers */
+.safe-zone-blueprint {
+  background-image: radial-gradient(rgba(16, 185, 129, 0.16) 1px, transparent 1px);
+  background-size: 16px 16px;
+}

@@ -1,0 +1,224 @@
+{
+  "source": "existing mobile customizer",
+  "views": [
+    "cart",
+    "decor",
+    "draw-size",
+    "draw-style",
+    "draw",
+    "flavour",
+    "icons-all",
+    "icons-love",
+    "icons",
+    "image",
+    "layers",
+    "shape",
+    "size",
+    "text-color",
+    "text-finish",
+    "text-font",
+    "text-size",
+    "text-style",
+    "text"
+  ],
+  "css": [
+    "css/recovery-dialog.css",
+    "css/batch-options-dialog.css",
+    "css/swatch.css",
+    "css/admin-ds.css",
+    "css/index.css",
+    "css/mobile-cookie-maker.css"
+  ],
+  "react_reference": [
+    "src/cookie-maker/EditPanels.tsx",
+    "src/cookie-maker/LayersManager.tsx",
+    "src/cookie-maker/mobileIcons.tsx",
+    "components/cookie-maker/AccentCookieTitle.tsx"
+  ],
+  "business_logic": false,
+  "google_fonts_external": true,
+  "checks": {
+    "command": "node --check ui.js",
+    "runtime_bounds": [
+      {
+        "state": "shape",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "decor",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "text",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "text-font",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "text-style",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "text-size",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "text-color",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "text-finish",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "draw",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "draw-size",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "draw-style",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "icons",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "icons-all",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "icons-love",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "image",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "layers",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "flavour",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "size",
+        "ctaBottom": 648,
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      },
+      {
+        "state": "cart",
+        "hasRoot": true,
+        "height": 667,
+        "scrollHeight": 667,
+        "scrollWidth": 375,
+        "width": 375
+      }
+    ],
+    "screenshots_checked": [
+      "shape at 393x844"
+    ],
+    "navigation_checked": [
+      "Shape to Decor",
+      "Decor to Text",
+      "Text to Font family"
+    ],
+    "limits": "DOM bounds checked for 19 states at 375x667; not a full editor or production app."
+  }
+}

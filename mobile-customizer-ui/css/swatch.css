@@ -1,0 +1,101 @@
+/* Exported from the existing mobile UI; appearance unchanged. */
+.ds-swatch { --ds-fill-color: var(--ds-swatch-color, var(--ds-color-accent)); width: 36px; height: 36px; border: 1px solid
+    color-mix(in srgb, var(--ds-fill-color) 72%, var(--ds-color-ink) 28%); border-radius: 50%; padding: 0px; flex: 0 0 auto; cursor: pointer; position: relative; outline: none; background-color: var(--ds-fill-color); background-image: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--ds-fill-color) 86%, var(--ds-color-canvas) 14%) 0%,
+    color-mix(in srgb, var(--ds-fill-color) 90%, var(--ds-color-ink) 10%) 100%
+  ); box-shadow: 2px 3px 6px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 55%, var(--nm-dark) 45%) 55%,
+        transparent
+      ),
+    -2px -2px 5px color-mix(in srgb, var(--nm-light) 85%, transparent),
+    inset 0 -2px 3px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 58%, var(--ds-color-ink) 42%) 62%,
+        transparent
+      ),
+    inset 0 1px 1px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 78%, var(--ds-color-canvas) 22%) 76%,
+        transparent
+      ); transition: transform 0.18s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; }
+.ds-swatch--sm { width: 26px; height: 26px; }
+.ds-swatch--xs { width: 20px; height: 20px; border-color: color-mix(in srgb, var(--ds-fill-color) 82%, var(--ds-color-ink) 18%); box-shadow: 1.5px 2.5px 5px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 55%, var(--nm-dark) 45%) 60%,
+        transparent
+      ),
+    -1.5px -1.5px 4px color-mix(in srgb, var(--nm-light) 90%, transparent),
+    inset 0 -1.5px 2px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 58%, var(--ds-color-ink) 42%) 70%,
+        transparent
+      ),
+    inset 0 1px 1px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 68%, var(--ds-color-canvas) 32%) 85%,
+        transparent
+      ); }
+.ds-swatch--xxs { width: 18px; height: 18px; border-color: color-mix(in srgb, var(--ds-fill-color) 82%, var(--ds-color-ink) 18%); box-shadow: 1px 2px 3px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 55%, var(--nm-dark) 45%) 55%,
+        transparent
+      ),
+    -1px -1px 2px color-mix(in srgb, var(--nm-light) 85%, transparent),
+    inset 0 -1px 1px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 58%, var(--ds-color-ink) 42%) 62%,
+        transparent
+      ),
+    inset 0 0.5px 0.5px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 78%, var(--ds-color-canvas) 22%) 76%,
+        transparent
+      ); }
+.ds-swatch--light { border-color: color-mix(in srgb, var(--ds-color-ink-muted) 50%, transparent); }
+.ds-swatch--static { cursor: inherit; pointer-events: none; }
+.ds-swatch:hover:not(:disabled):not(.ds-swatch--static) { transform: scale(1.05); }
+.ds-swatch[data-state="on"] { transform: scale(0.92); box-shadow: inset 3px 3px 6px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 58%, var(--ds-color-ink) 42%) 62%,
+        transparent
+      ),
+    inset -2px -2px 5px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 78%, var(--ds-color-canvas) 22%) 76%,
+        transparent
+      ); }
+.ds-swatch--xs[data-state="on"], .ds-swatch--xxs[data-state="on"] { transform: scale(0.9); box-shadow: inset 1.5px 1.5px 3.5px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 58%, var(--ds-color-ink) 42%) 70%,
+        transparent
+      ),
+    inset -1px -1px 2.5px
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--ds-fill-color) 68%, var(--ds-color-canvas) 32%) 85%,
+        transparent
+      ); }
+.ds-swatch:disabled { cursor: not-allowed; opacity: 0.42; }
+.ds-swatch--spectrum { --ds-plus-ink: color-mix(in srgb, var(--ds-color-ink) 62%, transparent); background-color: transparent; border-color: color-mix(in srgb, var(--ds-color-ink) 14%, transparent); box-shadow: rgba(90, 80, 65, 0.2) 2px 3px 6px, rgba(255, 255, 255, 0.72) -2px -2px 5px; background-image: linear-gradient(145deg, rgba(255, 254, 248, 0.55) 0%, transparent 46%, rgba(42, 40, 37, 0.08) 100%); overflow: hidden; }
+.ds-swatch--spectrum::before, .ds-swatch--spectrum::after { content: ""; position: absolute; top: 50%; left: 50%; width: 42%; height: 1.6px; border-radius: 1px; background: var(--ds-plus-ink); transform: translate(-50%, -50%); }
+.ds-swatch--spectrum::after { transform: translate(-50%, -50%) rotate(90deg); }
+.ds-swatch--spectrum[data-state="on"] { transform: scale(0.94); border-color: color-mix(in srgb, var(--ds-color-accent) 72%, var(--ds-color-ink) 28%); box-shadow: 0 0 0 2px color-mix(in srgb, var(--ds-color-accent) 38%, white),
+    2px 3px 6px rgba(90, 80, 65, 0.2),
+    -2px -2px 5px rgba(255, 255, 255, 0.72); }
+.ds-swatch--sm.ds-swatch--spectrum[data-state="on"], .ds-swatch--xs.ds-swatch--spectrum[data-state="on"] { transform: scale(0.94); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--ds-color-accent) 38%, white),
+    1.5px 2.5px 5px rgba(90, 80, 65, 0.2),
+    -1.5px -1.5px 4px rgba(255, 255, 255, 0.72); }

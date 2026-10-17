@@ -1,0 +1,74 @@
+/* Exported from the existing mobile UI; appearance unchanged. */
+.hg-batch-options { position: fixed; inset: 0px; z-index: 140; display: grid; place-items: center; padding: 24px; color: var(--ink); }
+.hg-batch-options__scrim { position: absolute; inset: 0px; border: 0px; background: rgba(36, 23, 17, 0.48); }
+.hg-batch-options__sheet { position: relative; display: flex; width: min(620px, 100%); max-height: min(760px, 100dvh - 48px); flex-direction: column; overflow: hidden; border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent); border-radius: var(--nm-radius); background: var(--t-surface); box-shadow: var(--nm-out-lg); }
+.hg-batch-options__header, .hg-batch-options__footer { flex: 0 0 auto; padding: 18px 20px; }
+.hg-batch-options__header { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--t-hair); }
+.hg-batch-options__header h2 { margin: 0px; font: 500 28px/1.1 var(--font-serif); }
+.hg-batch-options__header p, .hg-batch-options__footer p, .hg-batch-options__intro, .hg-batch-options__hint { margin: 6px 0px 0px; color: var(--ink-2); font-size: 13px; }
+.hg-batch-options__close { width: 42px; height: 42px; flex: 0 0 auto; border: 0px; border-radius: 50%; background: transparent; color: inherit; font: 300 28px / 1 system-ui, sans-serif; }
+.hg-batch-options__body { min-height: 0px; overflow: auto; overscroll-behavior: contain; padding: 0px 20px 14px; }
+.hg-batch-options__intro { margin: 16px 0px 4px; }
+.hg-batch-options__section { padding: 15px 0px; border-bottom: 1px solid var(--t-hair); }
+.hg-batch-options__section summary { min-height: 30px; cursor: pointer; font-size: 15px; font-weight: 650; }
+.hg-batch-options__option, .hg-batch-options__group { margin: 12px 0px 0px; padding: 0px; border: 0px; }
+.hg-batch-options__group legend { margin-bottom: 6px; color: var(--ink-2); font-size: 12px; }
+.hg-batch-options__check { display: flex; min-height: 42px; align-items: flex-start; gap: 10px; padding: 8px 0px; font-size: 14px; }
+.hg-batch-options__check input { width: 18px; height: 18px; flex: 0 0 auto; margin: 1px 0px 0px; accent-color: var(--t-primary); }
+.hg-batch-options__check span { display: grid; gap: 2px; }
+.hg-batch-options__check small { color: var(--ink-2); }
+.hg-batch-options__fields { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 10px; padding: 2px 0px 8px 28px; }
+.hg-batch-options__fields label { display: grid; gap: 5px; color: var(--ink-2); font-size: 12px; }
+.hg-batch-options__fields select, .hg-batch-options__fields input { width: 100%; min-height: 42px; border: 1px solid color-mix(in srgb, var(--ink) 24%, transparent); border-radius: 10px; background: color-mix(in srgb, var(--t-surface) 88%, white 12%); color: var(--ink); font: 14px/1.3 var(--font-sans); padding: 8px 10px; }
+.hg-batch-options__breakdown { display: grid; gap: 7px; margin-top: 12px; font-size: 13px; }
+.hg-batch-options__personalisation { display: grid; gap: 8px; margin-top: 14px; }
+.hg-batch-options__personalisation > strong { font-size: 14px; }
+.hg-batch-options__personalisation-entries { display: grid; gap: 10px; padding-left: 28px; }
+.hg-batch-options__personalisation-row { display: grid; grid-template-columns: minmax(0px, 1fr) 88px auto; align-items: end; gap: 8px; }
+.hg-batch-options__personalisation-row label { display: grid; gap: 5px; color: var(--ink-2); font-size: 12px; }
+.hg-batch-options__personalisation-row input { width: 100%; min-height: 42px; border: 1px solid color-mix(in srgb, var(--ink) 24%, transparent); border-radius: 10px; background: color-mix(in srgb, var(--t-surface) 88%, white 12%); color: var(--ink); font: 14px/1.3 var(--font-sans); padding: 8px 10px; }
+.hg-batch-options__blank { display: flex; min-height: 42px; align-items: center; color: var(--ink-2); font-size: 13px; }
+.hg-batch-options__remove-value, .hg-batch-options__personalisation-actions button { min-height: 42px; border: 1px solid color-mix(in srgb, var(--ink) 20%, transparent); border-radius: 10px; background: transparent; color: var(--ink); padding: 8px 10px; font: 600 12px/1.2 var(--font-sans); }
+.hg-batch-options__assigned { margin: 0px; color: var(--ink-2); font-size: 12px; }
+.hg-batch-options__assigned.is-incomplete { color: var(--t-primary); font-weight: 650; }
+.hg-batch-options__personalisation-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.hg-batch-options__personalisation-actions button:disabled { opacity: 0.45; }
+.hg-batch-options__paste { border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); padding-top: 9px; }
+.hg-batch-options__paste summary { cursor: pointer; color: var(--ink); font: 650 12px/1.3 var(--font-sans); }
+.hg-batch-options__paste p, .hg-batch-options__paste-footer { color: var(--ink-2); font: 12px/1.4 var(--font-sans); }
+.hg-batch-options__paste textarea { box-sizing: border-box; width: 100%; resize: vertical; min-height: 96px; border: 1px solid color-mix(in srgb, var(--ink) 24%, transparent); border-radius: 10px; background: color-mix(in srgb, var(--t-surface) 88%, white 12%); color: var(--ink); font: 14px/1.4 var(--font-sans); padding: 9px 10px; }
+.hg-batch-options__paste-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; }
+.hg-batch-options__paste-footer .is-error { color: var(--t-primary); font-weight: 650; }
+.hg-batch-options__paste-footer button { flex: 0 0 auto; min-height: 38px; border: 0px; border-radius: 10px; background: var(--t-primary); color: var(--t-on-primary, white); cursor: pointer; font: 650 12px/1.2 var(--font-sans); padding: 8px 12px; }
+.hg-batch-options__paste-footer button:disabled { cursor: default; opacity: 0.45; }
+.hg-batch-options__file { display: grid; gap: 7px; border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); padding-top: 10px; }
+.hg-batch-options__file > strong { font: 650 12px/1.3 var(--font-sans); }
+.hg-batch-options__file p { margin: 0px; color: var(--ink-2); font: 12px/1.4 var(--font-sans); }
+.hg-batch-options__file input[type="file"] { max-width: 100%; color: var(--ink-2); font: 12px/1.3 var(--font-sans); }
+.hg-batch-options__file .is-error { color: var(--t-primary); font-weight: 650; }
+.hg-batch-options__file .is-success { color: var(--ink); font-weight: 650; }
+.mcm-cart-item__edit-options { appearance: none; border: 0px; background: transparent; color: inherit; cursor: pointer; font: inherit; letter-spacing: inherit; padding: 0px; text-transform: inherit; text-decoration: underline 1px; text-underline-offset: 2px; }
+.mcm-cart-item__edit-options:focus-visible { outline: 2px solid var(--mcm-accent, currentColor); outline-offset: 2px; }
+.hg-batch-options__breakdown > div, .hg-batch-options__total { display: flex; justify-content: space-between; gap: 16px; }
+.hg-batch-options__notice { margin: 12px 0px 0px; color: var(--t-primary); font-size: 13px; }
+.hg-batch-options__footer { border-top: 1px solid var(--t-hair); }
+.hg-batch-options__total { align-items: baseline; margin-bottom: 12px; font-variant-numeric: tabular-nums; }
+.hg-batch-options__total strong { max-width: 70%; text-align: right; }
+.hg-batch-options__save { width: 100%; min-height: 48px; border: 0px; border-radius: 12px; background: var(--t-primary); color: rgb(255, 250, 241); font: 600 14px/1.3 var(--font-sans); }
+.hg-batch-options__save:disabled { opacity: 0.45; }
+.hg-batch-options__footer p { text-align: center; font-size: 11px; }
+.hg-batch-options button:focus-visible, .hg-batch-options summary:focus-visible, .hg-batch-options input:focus-visible, .hg-batch-options select:focus-visible { outline: 2px solid var(--t-primary); outline-offset: 3px; }
+@media (max-width: 767px) {
+  .hg-batch-options { align-items: end; padding: 42px 12px 12px; }
+  .hg-batch-options__sheet { width: 100%; max-height: calc(100dvh - 54px); }
+  .hg-batch-options__header, .hg-batch-options__footer { padding: 15px 16px; }
+  .hg-batch-options__body { padding-inline: 16px; }
+  .hg-batch-options__header h2 { font-size: 24px; }
+  .hg-batch-options__personalisation-entries { padding-left: 0px; }
+}
+@media (max-width: 350px) {
+  .hg-batch-options { padding: 42px 8px 8px; }
+  .hg-batch-options__fields { grid-template-columns: 1fr; }
+  .hg-batch-options__personalisation-row { grid-template-columns: minmax(0px, 1fr) 82px; }
+  .hg-batch-options__remove-value { grid-column: 1 / -1; }
+}
